@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    background-image: url(img/HD-wallpaper-bakugo-art-my-hero-academia-anime-bakugou-thumbnail.webp);
+    background-size: 100% 100%;
+    padding-top: 10px;
+}
+
+/*LETRAS  */
+@font-face{
+    font-family: "hero";
+    src: url(fonts/commando.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    color: #ffffff;
+    margin: 0px auto 40px;
+    text-align: center;
+    background-color: #00ff22;
+    font-family: hero;
+    font-size: 4em;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 15px 2px 20px 5px #27c400;
+
+}
+
+.text-p{
+    text-align: center;
+    background-color: rgba(20, 3, 3, 0.288);
+    padding-right: 40px;
+    padding-left: 40px; 
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 2em;
+    font-family: hero;
+    box-shadow: 15px 2px 20px 5px #46270594;
+    width: 95%;
+    border-radius: 25px;
+    -webkit-text-stroke: 1px rgba(255, 72, 0, 0.486);
+}
+
+.nav-ul{
+
+    list-style: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.nav-ul-li{
+    width: 300px;
+    margin: 15px auto;
+    background-color: #4c00ff;
+    transition: 200ms;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: hero;
+    box-shadow: 15px 2px 10px 8px #0086c473;
+    cursor: pointer;
+} 
+
+.container-img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+
+.imgAll{
+    width: 80%;
+    height: 240px;
+    margin: 15px auto 15px;
+
+    background-size: 100% 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 15px 2px 20px 5px #00000067;
+    overflow: hidden;
+    
+}
+
+.titles{
+    background-color: #00000085;
+    text-align: center;
+    font-size: 2em;
+    font-family: hero;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 10px 3px 20px #000f16;
+    color: #ffc400c2;
+    -webkit-text-stroke: 1px rgba(255, 72, 0, 0.486);
+}
+
+
+/* pop_up de imágenes */
+.image-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.popup-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+/*!!IMAGENES */
+.img1{
+    background-image: url(img/4791c41f61017661f83d23d159117001.webp);
+}
+.img2{
+    background-image: url(img/1307038.wbp.webp);
+}
+.img3{
+    background-image: url(img/deku_vs_muscular_by_kangjason_de50nrm-fullview.webp);
+}
+.img4{
+    background-image: url(img/all-might-vs-all-for-one-1200x1200-1.webp);
+}
+.img5{
+
+    background-image: url(img/EOCSjILU4AAugw_.webp);
+}
+.img6{
+    background-image: url(img/Episode_72.webp);
+}
+.img7{
+    background-image: url(img/Gigantomachia_is_crying.webp);
+}
+.img8{
+    background-image: url(img/Izuku_vs_Shoto.webp);
+}
+.img9{
+    background-image: url(img/maxresdefault.webp);
+}
+.img10{
+    background-image: url(img/images.webp);
+}
+.img11{
+    background-image: url(img/portada_my-hero-academia-103.webp);
+}
+.img12{
+    background-image: url(img/one-piece-64c5292174c91.webp);
+}
+.img13{
+    background-image: url(img/one-piece-933-portada.webp);
+}
+.img14{
+    background-image: url(img/cuales-son-los-ataques-de-luffy.webp);
+}
+.img15{
+    background-image: url(img/ua.png);
+}
+
+/*?ANIMACIONES */
+.imgAll:hover{
+    transition: 200ms;
+    transform: scale(1.1);
+}
+.nav-ul-li:hover{
+    transform: scale(1.08);
+}
+
+
+
+/**RESOLUCIONES */
+@media (min-width: 950px) {
+    .container-img{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .imgAll{
+        width: 40%;
+    }
+    
+}
+
+ @media (min-width: 1450px) and (max-width: 2300px) {
+    .container-img{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .imgAll{
+
+        width: 30%;
+    }
+    .nav-ul{
+        flex-direction: wrap;
+    }
+    .nav-ul-li{
+        width: 90%;
+    }   
+    
+} 
+
+@media (min-width: 1000px) and (max-width:1450px) {
+    .nav-ul{
+        display: flex;
+    }   
+    .nav-ul-li{
+        width: 1000px;
+    }   
+    body{
+        background-image: url(img/234076_my-hero-academia-wallpaper.webp);
+    }
+}
+
+
+@media (min-width: 500px) and (max-width:1000px){
+    .nav-ul-li{
+        width: 450px;
+    }   
+}
+
+
+
+
